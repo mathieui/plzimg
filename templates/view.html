@@ -1,5 +1,27 @@
 {% extends "base.html" %}
 {% block content %}
-<br/>
+<p>
     <a href="/o/{{ filename }}"><img src="/s/{{ filename }}" alt="L'image {{ filename }}" /></a>
+</p>
+<section id="base-help">
+  <h5>Copiez/collez les textes suivants pour...</h5>
+  Afficher l'image :<br/>
+  <input readonly value="https://pix.mathieui.net/{{ filename }}"/>
+  <br/>
+
+  Accéder à l'image :
+  <br/>
+  <input readonly value="https://pix.mathieui.net/o/{{ filename }}"/>
+  <br/>
+
+  Insérer la miniature dans un forum :
+  <br/>
+  <input readonly value="[url=https://pix.mathieui.net/o/{{ filename }}][img]https://pix.mathieui.net/s/{{ filename }}[/img][/url]"/>
+  <br/>
+
+  Insérer l'image dans un forum :
+  <br/>
+  <input readonly value="[url=https://pix.mathieui.net/o/{{ filename }}][img]https://pix.mathieui.net/o/{{ filename }}[/img][/url]"/>
+</section>
+
 {% endblock %}

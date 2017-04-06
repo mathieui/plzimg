@@ -85,3 +85,20 @@ a:focus { outline: 1px dotted; }
 a:visited {  }
 
 a *, button * { cursor: pointer; }
+
+.long {
+    max-width: 500px;
+    text-align: justify;
+    margin:auto;
+}
+
+#base-help {
+    width: 500px;
+    text-align: left
+    margin: auto;
+}
+
+#base-help > input {
+    width: 500px;
+}
+
